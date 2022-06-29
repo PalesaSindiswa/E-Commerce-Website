@@ -1,0 +1,44 @@
+.header
+{
+	position: relative;
+	width: 100%;
+	z-index: 10;
+}
+.top_bar
+{
+	width: 100%;
+	height: 150px;
+	background: #fafafa;
+	border-bottom: solid 1px rgba(0,0,0,0.05);
+	z-index: 2;
+}
+
+.top_bar_user a:hover
+{
+	color: #8a8a8a;
+}
+
+
+.navbar a:hover {
+   background-color: #3c678a;
+
+  color: black;
+}
+.navbar a.active {
+  background-color: #2196F3;
+
+}
+.navbar-nav{
+  padding-right: 2%;
+  color: #fafafa;
+
+}
+
+
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

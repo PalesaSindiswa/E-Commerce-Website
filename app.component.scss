@@ -1,0 +1,54 @@
+
+h1{
+
+  width: 250px;
+
+}
+
+
+.container a:hover {
+   background-color: #3c678a;
+
+  color: black;
+}
+.container a.active {
+  background-color: #2196F3;
+
+}
+
+.navbar {
+  width: 100%;
+  overflow: auto;
+
+}
+.navbars a {
+  float: right;
+  text-align: center;
+  padding: 12px;
+  color: rgba(73, 80, 78, 0.719);
+  text-decoration: none;
+  font-size: 25px;
+
+
+}
+
+
+form.form-inline button:hover {
+  background: #3c678a;
+}
+
+form.form-inline{
+  width: 50%;
+}
+form.form-inline::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .navbar a {
+    float: none;
+    display: block;
+  }
+}

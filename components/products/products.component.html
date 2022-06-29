@@ -1,0 +1,23 @@
+
+<div class="content" *ngFor="let product of dataSource">
+<p>hi</p>
+<div class="cards-content" fxLayout="row wrap" fxLayoutGap="1rem grid">
+
+  <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%"  class="test" >
+
+    <mat-card class="mat-elevation-z4 product-card">
+      <img mat-card-image src="\assets\Milk full cream long.jpeg"/>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <div class="large-text">Name:{{product.name}}</div>
+        <div class="price">Price: {{product.price | currency : 'R'}}</div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button  mat-raised-button class="addToCartButton" (click)="addToCart(product)"><mat-icon>add_shopping_cart</mat-icon> Add to cart</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
+
+
+</div>
